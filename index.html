@@ -83,13 +83,8 @@
     display:flex;justify-content:space-between;align-items:center;
     font-family:var(--mono);font-size:11px;letter-spacing:0.26em;color:var(--ink-2);
   }
-  .top .brand{position:relative;display:inline-block;line-height:0}
-  .top .brand img{width:26px;height:26px;display:block;object-fit:contain}
-  .top .brand .tm{
-    position:absolute;top:-2px;right:-11px;
-    font-family:var(--sans);font-size:8px;font-weight:500;line-height:1;
-    letter-spacing:0.02em;color:var(--ink-3);
-  }
+  .top .brand{display:inline-block;line-height:0}
+  .top .brand img{height:22px;width:auto;display:block;object-fit:contain;filter:invert(1)}
   .top .status{display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
   .top .pip{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent);animation:pulse 1.6s ease-in-out infinite}
   @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
@@ -268,8 +263,7 @@
   <!-- top -->
   <div class="top">
     <div class="brand">
-      <img src="logo.png" alt="E-ON">
-      <span class="tm">™</span>
+      <img src="eon-logo-crop-black.png" alt="E-ON">
     </div>
     <div class="status"><span class="pip"></span>SIGNAL · ACQUIRED</div>
   </div>
@@ -305,7 +299,7 @@
 
   <!-- bottom -->
   <div class="bot">
-    <div>© 2026 E-ON Gears Ltd</div>
+    <div>© 2026 E-ON<sup style="font-size:0.6em;letter-spacing:0;vertical-align:super">™</sup></div>
   </div>
 </div>
 
